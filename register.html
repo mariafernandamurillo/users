@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+
+    <h1>My user registration system</h1>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <main>
+        <h2>Add new user</h2>
+
+        <div id="form" class="form">
+            <div>
+                <input id="txtEmail" type="email" placeholder="E-mail">
+            </div>
+
+            <div>
+                <input id="txtPassword" type="password" placeholder="Password">
+            </div>
+            
+            <div>
+                <input id="txtFirstName" type="text" placeholder="First name">
+            </div>
+
+            <div>
+                <input id="txtLastName" type="text" placeholder="Last name">
+            </div>
+
+            <div>
+                <input id="txtAge" type="number" placeholder="Age">
+            </div>
+
+            <div>
+                <input id="txtGender" type="text" placeholder="Gender">
+            </div>
+
+            <div>
+                <input id="txtTel" type="tel" placeholder="Phone">
+            </div>
+
+            <div>
+                <select id="txtPayment">
+                    <option value="value1">Value 1</option>
+                    <option value="value2" selected>Value 2</option>
+                    <option value="value3">Value 3</option>
+                </select>
+            </div>
+
+            <div id="txtColor">
+                <input type="color">
+            </div>
+
+            <button id="btnAdd">Add</button>
+        </div>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="scripts/register.js"></script>
+
+</body>
+</html>
