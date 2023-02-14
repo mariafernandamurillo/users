@@ -11,6 +11,49 @@ function User(email, pass, fname, lname, age, gender, phone, payment, color){
     this.color = color;
 }
 
+function validate(user){
+    let valid = true;
+
+    if (user.email==""){
+        $("#txtEmail").addClass("input-alert-error");      
+        valid = false;   
+    }
+    if (user.pass==""){
+        $("#txtPassword").addClass("input-alert-error");      
+        valid = false;    
+    }
+    if (user.fname==""){
+        $("#txtFirstName").addClass("input-alert-error");    
+        valid = false;      
+    }    
+    if (user.lname==""){
+        $("#txtLastName").addClass("input-alert-error");   
+        valid = false;       
+    }  
+    if (user.age==""){
+        $("#txtAge").addClass("input-alert-error");     
+        valid = false;     
+    } 
+    if (user.gender==""){
+        $("#txtGender").addClass("input-alert-error");  
+        valid = false;        
+    } 
+    if (user.phone==""){
+        $("#txtTel").addClass("input-alert-error");     
+        valid = false;     
+    } 
+    if (user.payment==""){ //Not Working 
+        $("#txtPayment").addClass("input-alert-error");  
+        valid = false;        
+    } 
+    if (user.color=="#ffffff"){ //Not Working 
+        $("#txtColor").addClass("input-alert-error");   
+        valid = false;       
+    } 
+
+    return valid;
+}
+
 function register(){
     //Get the values from the form.
     let inputEmail = $("#txtEmail").val();
@@ -26,18 +69,28 @@ function register(){
     //Create an newUser object
     let newUser = new User (inputEmail, inputPasswords, inputFname, inputLname, inputAge, inputGender, inputPhone, inputPayment, inputColor);
 
-    //Clear the form
-    $("#txtEmail").val('');
-    $("#txtPassword").val('');
-    $("#txtFirstName").val('');
-    $("#txtLastName").val('');
-    $("#txtAge").val('');
-    $("#txtGender").val('');
-    $("#txtTel").val('');
-    $("#txtPayment").val('');
-    $("#txtColor").val('');
+    //Validate new user
+        if(validate(newUser)){
+            //Clear the form
 
-    console.log(newUser);
+        //My way
+        /* 
+        $("#txtEmail").val('');
+        $("#txtPassword").val('');
+        $("#txtFirstName").val('');
+        $("#txtLastName").val('');
+        $("#txtAge").val('');
+        $("#txtGender").val('');
+        $("#txtTel").val('');
+        $("#txtPayment").val('');
+        $("#txtColor").val('');*/
+
+        //Other way
+        $("input").val('');
+
+        //console.log(newUser);
+        saveUser(newUser);        
+    }
 }
 
 function init(){
