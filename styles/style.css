@@ -1,3 +1,13 @@
+@font-face{
+    font-family: montserratRegular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body{
+    font-family: montserratRegular;
+    color:#333333;
+}
+
 /*alert*/
 .input-alert-error{
     background-color: rgb(255, 216, 216);
@@ -7,4 +17,67 @@
 .input-style{
     background-color: rgb(218, 208, 255);
     border: 1px solid rgb(235, 168, 168);
+}
+
+/*Nav*/
+nav{
+    background: #E9EAFC;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a:hover{
+    text-align: center;
+    background: #A5ADF3;
+    color: #1828B4;
+    height: 50px;
+}
+
+/*register*/
+input, select{
+    height: 25px;
+    width: 300px;
+    border: #A5ADF3 solid 1px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button{
+    border-radius: 5px;
+    background: #A5ADF3;
+    color: #1828B4;
+    font-weight: bold;
+    width: 80px;
+    height: 25px;
+    border: none;
+    font-size: 17px;
+}
+
+button:hover{
+    background: #1828B4;
+    color: #ffffff;
+}
+
+.form{
+    border: solid 1px #A5ADF3; 
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 20px;
 }
