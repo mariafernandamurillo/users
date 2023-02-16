@@ -19,7 +19,7 @@ function readUsers(){
     }else{
         //if there is users
         let listUsers = JSON.parse(users); //Convert the string to an object
-        console.log(listUsers);
+        //console.log(listUsers);
         return listUsers;
     }
 }

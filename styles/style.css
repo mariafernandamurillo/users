@@ -8,6 +8,10 @@ body{
     color:#333333;
 }
 
+.hide{
+    display: none;
+}
+
 /*alert*/
 .input-alert-error{
     background-color: rgb(255, 216, 216);
@@ -80,4 +84,15 @@ button:hover{
     justify-content: center;
     border-radius: 5px;
     padding: 20px;
+}
+
+
+/*Home*/
+.logIn{
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+
 }

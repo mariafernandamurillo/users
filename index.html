@@ -17,15 +17,22 @@
     </nav>
 
     <main>
-        <h2>Home</h2>
+        <h2>Login</h2>
 
-        <div>
-     
-            
+        <div id="loginError" class="input-alert-error hide">
+            Username or Password Incorrect
         </div>
+
+        <div class="logIn">
+            <input type="text" id="txtUserName" placeholder="E-mail">
+            <input type="password" id="txtPassword" placeholder="Password">
+            <button id="btnLogIn" onclick="login()">Login</button>
+        </div>
+
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/login.js"></script>
 </body>
 </html>
