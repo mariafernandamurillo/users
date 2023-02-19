@@ -25,7 +25,8 @@ body{
 
 /*Nav*/
 nav{
-    background: #E9EAFC;
+    
+    background: rgb(218, 208, 255);
     height: 50px;
     display: flex;
     align-items: center;
